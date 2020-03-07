@@ -9,7 +9,7 @@ import (
 
 func TestModule2GoFormatContent(t *testing.T) {
 	numOfLines := OpenFileAndCountLines("./module2_code.go")
-	if numOfLines != 8 {
+	if numOfLines == 8 {
 		t.Errorf("it looks your 'go fmt' does not work as we expected")
 	}
 

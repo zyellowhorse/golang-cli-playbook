@@ -29,9 +29,6 @@ To test this module locally:
 
 Run the command `go help fmt` and examine the provided information.
 
-What command do we use to achieve the same result with that in Task 1?
-This time we use `go fmt`.
-
 Write the complete command to format the provided `module2_code.go` file.
 
 
