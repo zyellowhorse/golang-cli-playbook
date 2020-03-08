@@ -20,7 +20,7 @@ func TestModule1CheckEnv(t *testing.T) {
 }
 
 func TestModule1CheckEnvGOOS(t *testing.T) {
-	found := OpenFileAndFindString("module1.txt", "GOOS=")
+	found := OpenFileAndFindNthString("module1.txt", 0, "GOOS")
 
 	if !found {
 		t.Errorf("'go env' does not work as expected")
@@ -47,6 +47,34 @@ func OpenFileAndFindString(filename string, expected string) bool {
 
 		// matching logic
 		if trimmed == expected {
+			return true
+		}
+	}
+
+	return false
+}
+
+// OpenFileAndFindNthString opens a file, look for Nth string splitted by a '=', and return if given expected string is found or not
+func OpenFileAndFindNthString(filename string, nth int, expected string) bool {
+	f, err := os.Open(filename)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer f.Close()
+
+	scanner := bufio.NewScanner(f)
+	scanner.Split(bufio.ScanLines)
+
+	for scanner.Scan() {
+		t := scanner.Text()
+		trimmed := strings.Trim(t, " ")
+		if trimmed == "" {
+			continue
+		}
+
+		// matching logic
+		ss := strings.Split(trimmed, "=")
+		if ss[nth] == expected {
 			return true
 		}
 	}
