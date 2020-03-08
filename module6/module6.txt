@@ -1,0 +1,5 @@
+
+
+package module6 // import "github.com/xiaounb/go_cli_playbook/module6"
+
+func FunctionForModule6GoDoc()
