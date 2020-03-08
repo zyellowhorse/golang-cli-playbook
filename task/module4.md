@@ -6,7 +6,7 @@ We will learn the `go install` command and what needs to be provided to it.
 ## Verify locally
 To test this module locally:
 * Open up a terminal at the project root
-* Run command `cd moudle4` to change to the `module4` directory
+* Run command `cd module4` to change to the `module4` directory
 * Run command `go test -run Module4` to run all tests for module 4, or
 * Run command `go test -v -run Module4` to run all tests for module 4 with verbose information
 
