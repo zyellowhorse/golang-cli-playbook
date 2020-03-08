@@ -35,7 +35,7 @@ Close and reopen the command line program for the above change to take effect.
 
 
 ## Task 1: fix a specific package
-In this task, you are provided with a `go` source file (`module5.go`) which uses the `net/http` package.
+In this task, you are provided with a `go` source file (`module5_code.go`) which uses the `net/http` package.
 Notice that the package is not imported.
 Write the complete `goimports` command to import the missing package.
 
