@@ -8,7 +8,7 @@ import (
 	"testing"
 )
 
-func TestModule6DummyTest(t *testing.T) {
+func TestModule6DocumentTest(t *testing.T) {
 	found := OpenFileAndFindString("module6.txt", "func FunctionForModule6GoDoc()")
 
 	if !found {
