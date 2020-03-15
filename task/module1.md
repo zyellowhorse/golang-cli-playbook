@@ -36,7 +36,9 @@ By default, `go env` outputs as a shell script on Linux / MacOS and a batch scri
 Recall what you have read in the above documentation and check flags that are available to the `go env` command.
 What is the flag to specify the output to be in JSON format?
 
-In the terminal, write the complete command (go + sub-command + flag) as your answer for Task 2.
+We also need to redirect the output to a file, namely `module1.json`.
+
+In the terminal, write the complete command (go + sub-command + flag > module1.json) as your answer for Task 2.
 
 
 ## Extra help
