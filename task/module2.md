@@ -21,7 +21,7 @@ To test this module locally:
 - Run command `go test -v -run Module2` to run all tests for module 2 with verbose information 
 
 
-## Task 1: Use `go fmt` with proper flags
+## Task 1: Use `go fmt` to format and write back to the source file
 `go fmt` takes following input:
 - file: when given a file
 - all .go files under a directory: when given a directory
@@ -32,7 +32,7 @@ Run the command `go help fmt` and examine the provided information.
 Write the complete command to format the provided `module2_code.go` file.
 
 
-## Task 2: Format `Go` source code using a standalone program
+## Task 2: Format source code using a standalone program with proper flags
 Note that there are two tools when using formatting in `Go`:
 - `gofmt` is a standalone program (typically available as `bin/gofmt`)
 - `go fmt` calls `go` command with a sub-command `fmt`
