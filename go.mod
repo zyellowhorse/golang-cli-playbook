@@ -1,4 +1,4 @@
-module github.com/xiaounb/go_cli_playbook
+module github.com/pluralsight-projects/golang-cli-playbook
 
 go 1.13
 
