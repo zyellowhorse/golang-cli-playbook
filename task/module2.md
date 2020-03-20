@@ -29,7 +29,7 @@ To test this module locally:
 
 Run the command `go help fmt` and examine the provided information.
 
-Write the complete command to format the provided `module2_code.go` file.
+In the terminal, type in the `go fmt` command to format the provided `module2_code.go` file.
 
 
 ## Task 2: Format source code using a standalone program with proper flags
@@ -49,7 +49,7 @@ here, `path` can be a file or a directory.
 
 What flags should be used to achieve the exact same effect as Task 1?
 
-Write the `gofmt` command to format a source file named `module2_code.go`.
+In the terminal, type in the complete `gofmt` command (with flags) to format a source file named `module2_code.go`.
 
 
 
