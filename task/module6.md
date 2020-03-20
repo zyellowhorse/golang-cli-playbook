@@ -20,12 +20,17 @@ Complete the task by adding a comment in the source file.
 ## Task 2
 To see the documentation added in Task 1, we need to specify a parameter to the `go doc` command.
 
-Read the `go doc` command document, and provide a parameter in the following format:
+Read the `go doc` command document from `go help doc` in the terminal
+
+Since `go doc` outputs to `stdout`, we need to redirect to a text file using the following format:
 ```
-go doc sym.methodOrField
+go doc <methodName> > module6.txt
 ```
 
-Does the command show the documentation added in Task 1?
+In the terminal, type in the complete `go doc` command
+
+Open `module6.txt` in an editor. 
+Does it contain the documentation you added in Task 1?
 
 
 ## Extra help
