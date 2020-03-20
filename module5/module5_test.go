@@ -1,6 +1,8 @@
 package module5
 
 import (
+	"bufio"
+	"log"
 	"os"
 	"path"
 	"testing"
@@ -30,4 +32,21 @@ func FindFileAtPath(thePath string, theFilename string) bool {
 		return false
 	}
 	return true
+}
+
+// OpenFileAndCountLines opens a file and returns number of lines in the file
+func OpenFileAndCountLines(filename string) int {
+	f, err := os.Open(filename)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer f.Close()
+
+	scanner := bufio.NewScanner(f)
+	number := 0
+	for scanner.Scan() {
+		number++
+	}
+
+	return number
 }
