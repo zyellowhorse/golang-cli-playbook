@@ -20,12 +20,12 @@ go install <package>
 Same as `go get`, the above `package` can be the git repo of the package if hosted on github (that is, without the `https://` prefix).
 
 Your task is to write a command to import the following package which can be used to provide common case conversion functions. 
-Here is the `go.dev` link:
+Here is the `go.dev` link: (Note: you need to read and find out the value for `<package>`)
 ```
 https://pkg.go.dev/github.com/codemodus/kace?tab=doc
 ```
 
-
+In the terminal, type in the command to import the `kace`
 
 ## Extra help
 Here is the command to get more information on `go install`: 

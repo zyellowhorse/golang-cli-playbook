@@ -24,6 +24,8 @@ Your task is to write a command to import the following package which can be use
 https://github.com/nathan-osman/go-sunrise
 ```
 
+In the terminal, type in the command to import the above package.
+
 
 
 ## Extra help
