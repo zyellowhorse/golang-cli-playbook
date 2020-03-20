@@ -15,6 +15,15 @@ func TestModule5InstallationOfgoimports(t *testing.T) {
 	}
 }
 
+func TestModule5goimportsContent(t *testing.T) {
+	numOfLines := OpenFileAndCountLines("./module5_code.go")
+	if numOfLines == 11 {
+		t.Errorf("it looks your 'go fmt' does not work as we expected")
+	}
+
+	// TODO: add more tests
+}
+
 // FindFileAtPath returns if theFilename is found at thePath
 func FindFileAtPath(thePath string, theFilename string) bool {
 	if _, err := os.Stat(path.Join(thePath, theFilename)); os.IsNotExist(err) {
