@@ -1,6 +1,6 @@
 ## Purpose of this module
-This module will teach you how to use `go doc` to prints the documentation for a package, a function, a variable, or a method.
-We will learn the `go doc` command and the possible parameters available to it
+This module will teach you how to use `go doc` to prints the documentation for a function
+Similarly, the command can be used to print the documentation for a package, a variable, or a method.
 
 
 ## Verify locally
@@ -12,9 +12,9 @@ To test this module locally:
 
 ## Task 1: Add a comment in source code
 A `go` source file named `module6.go` is provided, 
-but the documentation for a function (`FunctionForModule6GoDoc`)is missing.
+but the documentation for a function (`FunctionForModule6GoDoc`) is missing.
 
-Complete the task by adding a comment in the source file.
+Complete the task by adding a comment in the source file in an editor.
 
 
 ## Task 2: Print out the added comment and direct to a file
@@ -32,8 +32,4 @@ In the terminal, type in the complete `go doc` command.
 Open `module6.txt` in an editor. 
 Does it contain the documentation you added in Task 1?
 
-
-## Extra help
-Here is the command to get more information on `go doc`: 
-- `go help doc`
 
