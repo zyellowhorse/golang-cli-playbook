@@ -2,6 +2,8 @@ package module1
 
 import (
 	"bufio"
+	"encoding/json"
+	"io/ioutil"
 	"log"
 	"os"
 	"path"
@@ -25,6 +27,23 @@ func TestModule1CheckEnvGOOS(t *testing.T) {
 	if !found {
 		t.Errorf("'go env' does not work as expected")
 	}
+}
+
+func TestModule1CheckEnvGOOSInJson(t *testing.T) {
+	content, _ := ioutil.ReadFile("module1.json")
+	var data map[string]interface{}
+
+	err := json.Unmarshal(content, &data)
+	if err != nil {
+		t.Errorf("it looks 'module1.json' is not correctly formatted as a JSON file")
+	}
+
+	_, ok := data["GOOS"]
+	if !ok {
+		t.Errorf("your 'module1.json' does not include valid values that we check")
+	}
+	// fmt.Println(data["GOOS"].(string))
+
 }
 
 // OpenFileAndFindString opens a file and return if the given string is found or not
