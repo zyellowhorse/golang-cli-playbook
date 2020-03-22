@@ -9,15 +9,31 @@ To test this module locally:
 * Run command `go test -run Module7` to run all tests for module 7, or
 * Run command `go test -v -run Module7` to run all tests for module 7 with verbose information
 
-## Task 1
+## Task 1: Get help for `go generate`
+The command to get more information on `go generate` is `go help generate`
+
+In a nutshell, `go generate` scans the files for lines like the following (called `directive`), and execute those commands:
+```
+//go:generate command <argument...>
+```
+
+Note that `go generate` must be run explicitly.
 
 
+## Task 2: Fill in the directive
+First, check the content of the provided `module7.go` file.
 
-## Task 2
+Then, in the terminal, run `go generate` and examine the output.
+Note that the `echo` command is executed.
 
+Third, check the content of the provided `module7_code.go` file.
+Note the `fmt` and `runtime` packages are missing.
 
+Your task is to fill in the directive to import the missing packages.
+You need to replace the whole `echo "command and arguments"` part with proper command.
 
-## Extra help
-Here is the command to get more information on `go generate`: 
-- `go help generate`
+## Task 3
+With task 2 finished, in the terminal, type in the proper command, 
+which calls the command line tool to import the missing packages.
 
+Examine the content of `module7_code.go`. Does it properly import the packages?
