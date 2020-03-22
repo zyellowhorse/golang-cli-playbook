@@ -33,9 +33,7 @@ Your task is to fill in the directive to import the missing packages.
 You need to replace the whole `echo "command and arguments"` part with proper command.
 
 ## Task 3
+With task 2 finished, in the terminal, type in the proper command, 
+which calls the command line tool to import the missing packages.
 
-
-
-
-## Extra help
-
+Examine the content of `module7_code.go`. Does it properly import the packages?
