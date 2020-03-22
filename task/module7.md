@@ -1,5 +1,5 @@
 ## Purpose of this module
-This module will teach you how to use `go generate` to scan for directives and generate `*.go` source files.
+This module will teach you how to use `go generate` to scan for directives, run commands, and modify existing `*.go` source files.
 
 
 ## Verify locally
@@ -32,7 +32,7 @@ Note the `fmt` and `runtime` packages are missing.
 Your task is to fill in the directive to import the missing packages.
 You need to replace the whole `echo "command and arguments"` part with proper command.
 
-## Task 3
+## Task 3: Run `go generate` to import the packages
 With task 2 finished, in the terminal, type in the proper command, 
 which calls the command line tool to import the missing packages.
 
