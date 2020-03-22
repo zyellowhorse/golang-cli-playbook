@@ -9,10 +9,10 @@ import (
 )
 
 func TestModule7gogenerate(t *testing.T) {
-	found := OpenFileAndFindString("module7.go", "goimports -w")
+	found := OpenFileAndFindString("module7.go", "//go:generate goimports -w module7_code.go")
 
 	if !found {
-		t.Errorf("proper use of `goimports` not found")
+		t.Errorf("proper use of `goimports` for `module7_code.go` is not found")
 	}
 }
 
