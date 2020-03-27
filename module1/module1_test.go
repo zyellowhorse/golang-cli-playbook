@@ -6,20 +6,9 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
-	"path"
 	"strings"
 	"testing"
 )
-
-func TestModule1CheckEnv(t *testing.T) {
-	actual := os.Getenv("GOPATH")
-	expected0 := ""
-	expected1 := path.Join(os.Getenv("HOME"), "go")
-
-	if actual != expected0 && actual != expected1 {
-		t.Errorf("environment variable GOPATH not set properly")
-	}
-}
 
 func TestModule1CheckEnvGOOS(t *testing.T) {
 	found := OpenFileAndFindNthString("module1.txt", 0, "GOOS")
