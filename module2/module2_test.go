@@ -10,7 +10,16 @@ import (
 func TestModule2GoFormatContent(t *testing.T) {
 	numOfLines := OpenFileAndCountLines("./module2_code.go")
 	if numOfLines == 8 {
-		t.Errorf("it looks your 'go fmt' does not work as we expected")
+		t.Errorf("it looks your 'go fmt' does not work as we expected for ./module2_code.go")
+	}
+
+	// TODO: add more tests
+}
+
+func TestModule2GoFormatHello(t *testing.T) {
+	numOfLines := OpenFileAndCountLines("./module2_hello.go")
+	if numOfLines == 5 {
+		t.Errorf("it looks your 'go fmt' does not work as we expected for ./module2_hello.go")
 	}
 
 	// TODO: add more tests
