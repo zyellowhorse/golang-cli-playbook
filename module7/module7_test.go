@@ -18,25 +18,22 @@ func TestModule7gogenerate(t *testing.T) {
 
 func TestModule7Import(t *testing.T) {
 	found := OpenFileAndFindString("module7_code.go", "import (")
-
 	if !found {
 		t.Errorf("import not found")
+		return
 	}
-}
 
-func TestModule7ImportFmt(t *testing.T) {
-	found := OpenFileAndFindString("module7_code.go", "	\"fmt\"")
-
+	found = OpenFileAndFindString("module7_code.go", "	\"fmt\"")
 	if !found {
 		t.Errorf("package 'fmt' not imported")
+		return
 	}
-}
 
-func TestModule7ImportRuntime(t *testing.T) {
-	found := OpenFileAndFindString("module7_code.go", "	\"runtime\"")
+	found = OpenFileAndFindString("module7_code.go", "	\"runtime\"")
 
 	if !found {
 		t.Errorf("package 'runtime' not imported")
+		return
 	}
 }
 
