@@ -12,7 +12,7 @@ func TestModule6DocumentTest(t *testing.T) {
 	found := OpenFileAndFindString("module6.txt", "func FunctionForModule6GoDoc()")
 
 	if !found {
-		t.Errorf("go doc does not work as expected")
+		t.Errorf("go doc does not generate the comment properly")
 	}
 
 	// TODO: add more tests
