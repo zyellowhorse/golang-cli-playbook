@@ -9,15 +9,6 @@ import (
 	"testing"
 )
 
-func TestModule5InstallationOfgoimports(t *testing.T) {
-	binPath := path.Join(os.Getenv("GOPATH"), "bin")
-	found := FindFileAtPath(binPath, "goimports")
-
-	if !found {
-		t.Errorf("goimports cannot be found")
-	}
-}
-
 func TestModule5goimportsContent(t *testing.T) {
 	expected := "	\"fmt\""
 	found := OpenFileAndFindNthString("./module5_code.go", 0, expected)
