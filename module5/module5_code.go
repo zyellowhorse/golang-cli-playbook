@@ -9,7 +9,7 @@ import (
 func GetExampleDotCom() {
 	resp, err := http.Get("http://example.com/")
 	if err != nil {
-		fmt.Println("something went wrong")
+		fmt.Println("something went wrongg")
 	}
 
 	defer resp.Body.Close()
